@@ -70,7 +70,6 @@ def players():
         playerlist.append(player)
     return playerlist
         
-
 #e)
 if __name__ == "__main__":
     playerlist = players()
@@ -100,4 +99,4 @@ if __name__ == "__main__":
         print("") #newline
 
     players_sorted = sorted(playerlist, key=lambda x: x.points, reverse=True)
-    print(f"{players_sorted[0].name} vant!")
+    print(f"{players_sorted[0].name} vant med {players_sorted[0].points} poeng!")
